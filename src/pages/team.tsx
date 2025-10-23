@@ -161,7 +161,7 @@ const team: React.FC = () => (
                 titles={["Season Summary", "Georgia Scrimmage"]}
                 first={
                     <div>
-                        <div className="season-text">Medals Coming Soon...</div>
+                        <div className="season-text">5 medals</div>
                         <div className="season-text">
                             Alternates: Esther Hwang, Yeeun Kwak, Lien Nguyen, Chenfei Zhou, Clark Song, Dylan Lim, Maggie Wang, Nathanael Binyam
                         </div>
