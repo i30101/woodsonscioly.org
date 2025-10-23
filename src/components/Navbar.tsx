@@ -44,9 +44,6 @@ export default function Navbar() {
                             <a className={"nav-link navbar-link link"} href={"../contribute"}>Contribute</a>
                         </li>
                     </ul>
-                    <form className={"d-flex"} role={"search"} data-aos={"fade-up"} data-aos-delay={300}>
-                        <a href={"../login"} className={"btn sign-in-button"}>Log in</a>
-                    </form>
                 </div>
             </div>
         </nav>

@@ -2,6 +2,9 @@
  * @author Andrew Kim
  * @version 3.0.0
  * @since 28 May 2025
+ * 
+ * @updatedby Nathan Nguyen
+ * @updated 16 Oct 2025
  */
 
 
@@ -16,6 +19,7 @@ import PlacingList from "../components/PlacingList";
 
 
 const teamNames = {
+    "2026": ["Team Leviathan", "Team Kraken", "Team Hydra"],
     "2025": ["Team Godzilla", "Team Rodan", "Team Mothra"],
     "2024": ["Team Europa", "Team Callisto", "Team Io"],
     "2023": ["Team Aang", "Team Katara", "Team Zuko"],
@@ -26,9 +30,14 @@ const teamNames = {
 
 // all teams
 const allTeams = {
+    "2026": [
+        ["Jamie Kim", "Maddie Cho", "Timothy Lin-Lee", "Ada Qin", "Nathan Nguyen", "Elaina Wi", "Ian Gonzalez", "Ivy Zhao", "Katie Yen", "Laurent Pham", "Wyndat Phan", "Eric Li", "Brian Vu", "Nico Lee", "Sophia Li"],
+        ["Sterling Kim", "Grace Levin", "Sohan Hadimani", "Lianna Nguyen", "Livia Harley", "Gabriella Binyam", "Lynn Hoang", "Colin Humphrey", "Leyna Nguyen", "Gabriella Paik", "Puneeth Devineni", "Corrine Nguyen", "Nathaniel Kim", "Kevin Shen", "Anh-Minh Tran"],
+        ["Khoa Nguyen", "Sophia Nguyen", "Adrianna Jarz", "Shaheer Khan", "Vibu Vishnu Ram", "Daniel Barnabas", "Maria Wang", "Josefien Declerck", "Owen Liu", "Pierre Phan", "JohnPaul Paek", "Joeun Park", "Magnus Swenson", "Clive Song", "Esther Li"]
+    ],
     "2025": [
-        ["Ian Gonzalez", "Elaina Wi", "Ivy Zhao", "James Kim", "Nick Tong", "Mia Monroe", "Jamie Kim", "Vibu Vishnu Ram", "Catherine Han", "Matthew Lee", "Timothy Lin-Lee", "Andrew Kim", "Morgan Altier", "Katie Yen", "Ada Qin"],
-        ["Nora Islam", "Ryan Chong", "Yeeun Kwak", "Richard He", "Enoch Tan", "Maddie Cho", "Brian Soltani", "Shaheer Khan", "Maggie Wang", "Dylan Nguyen", "Krish Stauber", "Maria Wang", "Laurent Pham", "Daniel Barnabas", "Josefien Declerk"],
+        ["Ian Gonzalez", "Elaina Wi", "Ivy Zhao", "James Kim", "Nick Tong", "Mia Monroe", "Jamie Kim", "Vibu Vishnu Ram", "Dylan Nguyen", "Matthew Lee", "Timothy Lin-Lee", "Andrew Kim", "Morgan Altier", "Katie Yen", "Ada Qin"],
+        ["Nora Islam", "Ryan Chong", "Yeeun Kwak", "Richard He", "Enoch Tan", "Maddie Cho", "Brian Soltani", "Shaheer Khan", "Maggie Wang", "Christian Yoo", "Krish Stauber", "Maria Wang", "Laurent Pham", "Daniel Barnabas", "Josefien Declerk"],
         ["Madison Williams", "Ben Kralovec", "Amanda Martin", "Maya Smith", "Khoa Nguyen", "Harun Khan", "Emily Pan", "Hanru Xu", "Brian Vu", "Chenfei Zhou", "Nathan Nguyen", "WynSon Phan", "Esther Li", "Clive Song", "Sophia Li"]
     ],
     "2024": [
@@ -145,15 +154,17 @@ const parentID = "teamAccordion";
 const team: React.FC = () => (
     <>
         <div className="primary-section" data-aos="fade-up">
-            <div className="heading-1" data-aos="fade-up">2024-2025 Season Team</div>
-            <MemberTable names={teamNames[2025]} members={allTeams[2025]}/>
+            <div className="heading-1" data-aos="fade-up">2025-2026 Season Team</div>
+            <MemberTable names={teamNames[2026]} members={allTeams[2026]}/>
             <PlacingList
-                year={2025}
-                titles={["Season Summary", "Georgia Scrimmage", "Monta Vista Invitational", "Flint Hill Invitational", "Fairfax Invitational", "Princeton Invitational", "UMW Regional", "States"]}
+                year={2026}
+                titles={["Season Summary", "Georgia Scrimmage"]}
                 first={
                     <div>
-                        <div className="season-text">133 medals</div>
-                        <div className="season-text">Alternates: Christian Yoo, Humphrey, Lien Nguyen, Sophia Nguyen, Esther Hwang</div>
+                        <div className="season-text">Medals Coming Soon...</div>
+                        <div className="season-text">
+                            Alternates: Esther Hwang, Yeeun Kwak, Lien Nguyen, Chenfei Zhou, Clark Song, Dylan Lim, Maggie Wang, Nathanael Binyam
+                        </div>
                     </div>
                 } />
         </div>
@@ -161,6 +172,18 @@ const team: React.FC = () => (
         <div className="primary-section" data-aos="fade-up">
             <div className="heading-1" data-aos="fade-up">Previous Seasons</div>
             <div data-aos="fade-up" className="accordion" id={parentID}>
+                <SeasonAccordion year={2025} names={teamNames[2025]} members={allTeams[2025]} parent={parentID} collapsed={true}>
+                    <PlacingList
+                        year={2025}
+                        titles={["Season Summary", "Georgia Scrimmage", "Monta Vista Invitational", "Flint Hill Invitational", "Fairfax Invitational", "Princeton Invitational", "UMW Regional", "States"]}
+                        first={
+                            <div>
+                                <div className="season-text">133 medals</div>
+                                <div className="season-text">Alternates: Humphrey, Lien Nguyen, Sophia Nguyen, Esther Hwang</div>
+                            </div>
+                        }
+                    />
+                </SeasonAccordion>
                 <SeasonAccordion year={2024} names={teamNames[2024]} members={allTeams[2024]} parent={parentID} collapsed={true}>
                     <PlacingList
                         year={2024}

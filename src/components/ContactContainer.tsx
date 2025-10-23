@@ -17,7 +17,7 @@ interface ServiceProps {
 
 const ContactService: React.FC<ServiceProps> = ({name, contact, url, image}) => {
     serviceDelay += 50;
-    return <a href={url} target="_blank" className="service row" data-aos="fade-up" data-aos-delay={serviceDelay}>
+    return <a href={url} target="_blank" className="service row" data-aos="fade-up" data-aos-delay={serviceDelay} rel="noreferrer">
         <div className="contact-icon col-2">
             <img src={image} className="contact-image" alt={image}/>
         </div>

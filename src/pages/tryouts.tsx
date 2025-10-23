@@ -10,7 +10,7 @@ import React from "react";
 
 const tryouts: React.FC = () => (
     <div className="blog-body row" data-aos={"fade-up"}>
-        <div className="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        {/* <div className="col-xs-12 col-sm-12 col-md-2 col-lg-2">
             <div className="detail-label">Last Updated</div>
             <div className="detail">4 December 2024</div>
         </div>
@@ -73,7 +73,7 @@ const tryouts: React.FC = () => (
                 </p>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-2 col-lg-2" />
-        </div>
+        </div> */}
     </div>
 );
 

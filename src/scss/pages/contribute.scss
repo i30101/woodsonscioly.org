@@ -2,6 +2,9 @@
 Author: Andrew Kim
 Version: 3.0.0
 Since: 28 May 2025
+
+@updatedby Nathan Nguyen
+@updated 16 Oct 2025
 */
 
 @import '../variables.scss';
@@ -11,7 +14,7 @@ Since: 28 May 2025
     padding: 20px;
 
     .donate-tier {
-        background-color: $box-dark;
+        background-color: $box-light;
         border-radius: 16px;
         padding: 40px 30px 30px 30px;
         transition: transform 0.5s;
@@ -27,20 +30,22 @@ Since: 28 May 2025
     }
 
     .tier-name {
-        color: white;
+        color: $text-lighter;
         font-size: 25px;
         margin-bottom: 10px;
         font-weight: 600;
     }
 
     .price-range {
-        color: $text-light;
+        color: $text-lighter;
         margin-bottom: 20px;
     }
 
     .donate-button {
         margin-bottom: 25px;
         width: 100%;
+        color: $text-lighter;
+        
     }
 
     .benefits {
@@ -57,7 +62,7 @@ Since: 28 May 2025
         }
 
         .included {
-            color: $text-light;
+            color: $text-lighter;
         }
 
         .excluded {
@@ -66,9 +71,8 @@ Since: 28 May 2025
     }
 }
 
-
 .current-sponsor-category {
-    margin: 100px auto auto auto;
+    margin: 100px auto 0 auto;
     max-width: 1000px;
 
     .csc-name {

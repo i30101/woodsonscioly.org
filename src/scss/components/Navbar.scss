@@ -12,7 +12,7 @@ Since: 20 March 2025
     background-color: #050c1a !important;
     color: white;
     padding: 0 ;
-    max-width: 100%;
+    max-width: 93%;
 }
 
 #navbar-contents {
@@ -45,21 +45,6 @@ Since: 20 March 2025
     text-align: center;
 }
 
-.sign-in-button {
-    height: 40px;
-    padding: 6px 20px 20px 20px;
-    border: 2px solid ;
-    border-radius: 20px;
-    color: $primary-purple;
-    transition: background-color 0.5s;
-    margin: auto;
-}
-
-.sign-in-button:hover, .sign-in-button:active, .sign-in-button:focus{
-    background-color: $primary-purple !important;
-    color: $background !important;
-}
-
 .navbar-toggler:focus {
     border: none;
 }
@@ -69,9 +54,9 @@ Since: 20 March 2025
     border: none;
 }
 
-.navbar-toggler-icon::selection {
-    //background-image: url('/icons/menu.svg') !important;
-}
+// .navbar-toggler-icon::selection {
+//     //background-image: url('/icons/menu.svg') !important;
+// }
 
 
 

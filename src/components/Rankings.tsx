@@ -8,6 +8,16 @@
 // external libraries
 import React from "react";
 
+/**
+ * Defines the placings per season.
+ * Array of objects, where each object represents a competition.
+ *
+ * Within each competition object:
+ * - Keys represent the placing (e.g., 1 for 1st place).
+ * - The key '0' is used for the overall team rank.
+ * - Values are an array of event names that achieved that placing.
+ */
+
 
 const placings2023 = [
     {
@@ -153,10 +163,21 @@ const placings2025: any = [
         4: ["Air Trajectory", "Experimental Design", "materials Science"],
         5: ["Cybersecurity"],
         6: ["Disease Detectives", "Fossils", "Botany"]
+    },
+]
+
+const placings2026: any = [
+    {
+        0: ["8th overall"],
+        3: ["Water Quality"],
+        5: ["Anatomy & Physiology"],
+        6: ["Engineering CAD"],
+        7: ["Science in the News*"],
+        8: ["Disease Detectives"],
     }
 ]
 
-const years = [placings2023, placings2024, placings2025];
+const years = [placings2023, placings2024, placings2025, placings2026];
 
 
 interface RankingProps {
