@@ -13,46 +13,73 @@ const leadership: React.FC = () => (
         {(() => {
             const aboutContents = [
                 {
-                    name: "Andrew Kim",
+                    name: "Jamie Kim",
                     position: "President",
                     grade: "Senior",
-                    image: "andrew",
-                    contents: "Hi, I'm Andrew, a senior on my fourth year as a Science Olympiad competitor. WSO has been a place for me to reach my fullest potential while working the smartest people in the school. My favorite moments in high school have been with my scioly team, and I aim to make WSO a place where people have unforgettable and fulfilling experiences, just like it is for me. If I had to choose, my most memorable experiences were when the team threw a surprise birthday party for me, and when we got 1st at Regionals. As for events, my best include Codebusters and Robot Tour, but I'll always insist that Fermi questions is the greatest scioly event of all time. In my free time, I like coding, running, listening to indie music, and reading Frank Herbert."
+                    image: "jamie",
+                    contents: `
+                    What's up my lovelies! I'm Jamie, your Woodson Science Olympiad President for the 2025-2026 season. It's been a long five years since I first started participating, and it's been an incredibly exciting ride! My favorite part about Science Olympiad is the community it builds. Being a part of this club has improved me so much as a competitor, leader, and person. In the room, you can find me tabbing my binders or scrambling to finish my cheat sheets. As a jack-of-all-trades for study events, I don't specialize in one category. Outside of WSO, you can find me spending atrocious amounts of money on clothes while listening to Neon Trees and Cigarettes After Sex.`
                 },
                 {
-                    name: "Jamie Kim",
+                    name: "Elaina Wi",
                     position: "Vice President",
                     grade: "Junior",
-                    image: "jamie",
-                    contents: "Hey there! I'm Jamie, and as a junior, it's my 4th year participating in Science Olympiad. During meetings, you can find me diligently working away at the Life Science events, trying my best not to destroy the builds, and occasionally (or often) catching a nap on Mrs. Babcock's couch. Science Olympiad is one of my greatest passions; from pulling all-nighters to perfect my binder events to hanging out with friends after competitions, I truly enjoy every aspect of it. Outside of Science Olympiad, I love learning about all things biology, listening to Lauv, and destroying food while baking. I am excited to bring my experience and enthusiasm to the team, ensuring that our journey this year is both successful and memorable. Let's make this year the best one yet!"
+                    image: "elaina",
+                    contents: "Hello! I'm Elaina, a junior who loves life science events. In my 2 (almost 3) years of scioly, I’ve enjoyed creating detailed cheatsheets for my events and hanging out after competitions. Overall, my favorite WSO experiences have been late night snacking at 2025 nationals and participating in nervous small talk with other teams before horrendous WIDI builds are revealed. My passion in STEM is rooted in my interest in agricultural science, especially food dairy science. Outside of scioly, you can usually find me napping, practicing archery, or creating art. As vice president, I hope to bridge the teams together and help everyone have a great year!"
                 },
                 {
-                    name: "James Kim",
+                    name: "Ivy Zhao",
+                    position: "Secretary",
+                    grade: "Junior",
+                    image: "ivy",
+                    contents: "Hello, I am Ivy Zhao and I am a senior who has been a part of WSO for the last 4 years. Being part of WSO has allowed me to explore my passion for science while competing and learning with an amazing team. The most memorable moments this club has given me include scarfing down food late at night during nats and venturing around UMW after regionals. My favorite events are entomology, forestry, and fossils thanks to all the enjoyable memories I have gained and the amazing people I got to work with. If I had to choose, my favorite insects would be braconid wasps, my favorite tree would be Magnolia virginiana, and my favorite extinct invertebrates would be eurypterids."
+                },
+                {
+                    name: "Maddie Cho",
                     position: "Treasurer",
                     grade: "Senior",
-                    image: "james",
-                    contents: "Hi! I'm James, and I'm a senior with a deep interest in life science. I'm especially passionate about agricultural science and hope that an agsci event will be added to the permanent SciOly rotation in the near future. I first experienced Science Olympiad in 7th grade, and after a brief hiatus during 8th grade distance learning, I returned to it during my freshman year and have continued on with it since then. My favorite event from the past season was Forestry, and I continue to identify trees on my walk home after school. As Treasurer, I hope to boost parent involvement in Science Olympiad and help organize finances to provide WSO members with even more opportunities and meaningful experiences. In my free time, I likes to practice tree ID, play games with my friends, and dream about the day when a cure for sleep is finally developed."
+                    image: "maddie",
+                    contents: "Hello! My name’s Maddie and I’m a senior who joined Science Olympiad last year. My favorite things are staring at money, counting money, and swimming in money. I’m technically a chem person, but I’ll dabble in earth and life sci occasionally. You can typically find me sleeping, drawing, tracking money, and sometimes doing work. I didn’t know that Science Olympiad existed until a year and a half ago, but I’ve met some of my best friends and learned a lot about myself and my interests through this club."
                 },
                 {
-                    name: "Matthew Lee",
+                    name: "Ada Qin",
                     position: "Build Captain",
                     grade: "Senior",
-                    image: "matthew",
-                    contents: "I'm a senior interested in electrical engineering and aerospace engineering! I spend my free time either putting together or flying FPV drones for fun, or for projects. I typically spend most of my time in scioly building my 5in notes binders for hybrids or trying to find the next workaround for my build events."
+                    image: "ada",
+                    contents: "Hey everyone! I’m Ada, and I’m one of your co-build captains this year! You can usually spot me by my signature purple jacket, tinkering away at something-whether it’s cardboard crafts, wire sculptures, or one of our event builds. This year, I’m competing in Machines, Engineering CAD, and Electric Vehicle, and I couldn’t be more excited to dive into the mechanical side of Science Olympiad. When I’m not building or testing, you’ll probably catch me listening to Frank Sinatra while working on my next project or more likely taking a power nap in some random corner. I can’t wait to help lead our build team and make this season an unforgettable one!"
                 },
                 {
-                    name: "Nick Tong",
-                    position: "Secretary",
+                    name: "Timothy Lin-Lee",
+                    position: "Co-Build Captain",
+                    grade: "Sophmore",
+                    image: "timmy",
+                    contents: "Hi, I'm Timothy! I'm a sophomore and this is my fourth year in Science Olympiad (including middle school). You can probably find me sitting/lying on the couch in Ms. Babcock's room before and after school. I participate in Science Olympiad because I enjoy learning new things. I also enjoy being part of the team and the thrill that comes with receiving results. I mostly do physics events such as Circuit Lab, Machines, Wind Power, and Optic even though I also enjoy doing builds such as Helicopter and Air Trajectory. Outside of Science Olympiad, I also play basketball and volleyball as well as playing the viola in orchestra. My favorite Science Olympiad memory is going to Nationals and spending time with the team in Nebraska! I look forward to learning new things, making memories, and having fun in the upcoming season!"
+                },
+                {
+                    name: "Nathan Nguyen",
+                    position: "Technical Captain",
                     grade: "Senior",
-                    image: "nick",
-                    contents: "I'm a senior who loves build and earth science events, specifically Dynamic Planet and Air Trajectory. I initially joined Science Olympiad in my sophomore year, and it has been a wonderful avenue to connect with others while exploring the sciences. Each year, I set ambitious academic goals, particularly focused on the realm of science. Woodson Science Olympiad provides the perfect environment for me to challenge myself and grow. The supportive team that surrounds me shares these same goals, making it an inspiring and nurturing experience. When I am not working on Science Olympiad, in my free time, I enjoy wrestling, weightlifting, and drumming to music. I am excited for what the next season will bring and hope we have another wonderful season."
+                    image: "nathan",
+                    contents: `Jello! I am Nathan Nguyen, a senior who is going into their third year of Science Olympiad. 
+                    Every since joining WSO, my high school experience has been filled with unforgettable moments, 
+                    from the winning of medals to the sleepless nights before competition. My favorite memory from Science 
+                    Olympiad was playing around at on the Fairfax High School Field after my first in-person competition.
+                    As for events that I specialize in: Codebusters, Robot Tour, Astronomy, and the best event of all time, Fermi. 
+                    I am excited to continue contributing to the success of our team and helping to make this year a memorable one.`
                 },
                 {
-                    name: "Morgan Altier",
+                    name: "Katie Yen",
                     position: "Logistics Officer",
-                    grade: "Senior",
-                    image: "morgan",
-                    contents: "Hello! I'm Morgan, and I'm a senior who loves math and science and staying up late for no reason. It's my third year doing Science Olympiad, and I've loved it ever since I started sophomore year. My favorite thing about scioly is the fun and supportive community. In my free time, you can find me listening to music, solving puzzles, crocheting, and playing bass. I'm looking forward to this year in scioly and what it has in store !"
+                    grade: "Junior",
+                    image: "katie",
+                    contents: "Hello everyone! I'm Katie, and I'm your logistics officer for this year! You can often find me in the lab mixing questionable chemicals together (don't be like me, safety is important). This year, I'm competing in Forensics, Chemistry Lab, and Codebusters - I'm super excited to see just how much we can learn from these events! When I'm not grinding any tests, I spend my free time listening to jazz, playing the guitar, and solving logic puzzles. I look forward to helping make this season the best Woodson Science Olympiad has ever been! "
+                },
+                {
+                    name: "Ian Gonzalez",
+                    position: "Study Captain",
+                    grade: "Junior",
+                    image: "ian",
+                    contents: "Hi, I'm Ian, a junior in my fourth year in Science Olympiad! Science Olympiad has been an outlet for me to challenge myself academically while also meeting some of the best people I've befriended in high school. I hope that WSO is a place where people can connect with others while having fun learning about various areas of science! Outside of Science Olympiad, I enjoy band, orchestra, and K-Pop dance."
                 }
             ];
 
