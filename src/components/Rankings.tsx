@@ -46,7 +46,7 @@ const placings2023 = [
         3: ["Environmental Chemistry", "Experimental Design", "Rocks and Minerals"],
         4: ["Bridge", "Dynamic Planet", "Fermi Questions"],
         5: ["Disease Detectives", "WIDI"],
-        6: ["Anatomy & Physiology", "Chem Lab", " Dynamic Planet"],
+        6: ["Anatomy & Physiology", "Chemistry Lab", " Dynamic Planet"],
     },
     {
         0: ["4th overall"],
@@ -124,7 +124,7 @@ const placings2025: any = [
         2: ["Dynamic Planet", "Tower"],
         3: ["Anatomy & Physiology", "Geologic Mapping", "Materials Science"],
         4: ["Forensics", "Fossils", "Robot Tour", "Tower"],
-        5: ["Bungee Drop", "Chem Lab", "Codebusters", "Dynamic Planet", "Experimental Design", "Geologic Mapping", "Microbe Mission", "Optics"]
+        5: ["Bungee Drop", "Chemistry Lab", "Codebusters", "Dynamic Planet", "Experimental Design", "Geologic Mapping", "Microbe Mission", "Optics"]
     },
     {
         0: ["1st overall"],
@@ -160,7 +160,7 @@ const placings2025: any = [
         1: ["Anatomy & Physiology", "Codebusters", "Entomology", "Helicopter", "Tower", "Wind Power"],
         2: ["Dynamic Planet", "Forensics", "Geologic Mapping", "Optics"],
         3: ["Astronomy", "Ecology", "Electric Vehicle", "Microbe Mission"],
-        4: ["Air Trajectory", "Experimental Design", "materials Science"],
+        4: ["Air Trajectory", "Experimental Design", "Materials Science"],
         5: ["Cybersecurity"],
         6: ["Disease Detectives", "Fossils", "Botany"]
     },
@@ -174,6 +174,21 @@ const placings2026: any = [
         6: ["Engineering CAD"],
         7: ["Science in the News*"],
         8: ["Disease Detectives"],
+    },
+    {
+        0:["1st overall"],
+        1: ["Helicopter", "Hovercraft", "Geowizard"],
+        2: ["Hovercraft"],
+        3: ["Boomilever", "Electric Vehicle", "Helicopter", "Machines", "Robot Tour"],
+        4: ["Anatomy & Physiology", "Bungee Drop", "Disease Detectives", "Helicopter", "Brainrot Battle"],
+        5: ["Bungee Drop", "Brainrot Battle"],
+        6: ["Bungee Drop", "Engineering CAD", "Brainrot Battle"],
+    },
+    {
+        0: ["1st overall"],
+        1: ["Anatomy & Physiology", "Astronomy", "Codebusters", "Disease Detectives", "Experimental Design", "Forensics", "Rocks and Minerals"],
+        2: ["Astronomy", "Circuit Lab", "Codebusters", "Disease Detectives", "Materials Science", "Rocks and Minerals"],
+        3: ["Chemistry Lab", "Codebusters", "Dynamic Planet", "Engineering CAD", "Entomology", "Experimental Design", "Forensics", "Remote Sensing"]
     }
 ]
 

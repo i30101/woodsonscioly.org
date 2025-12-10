@@ -158,10 +158,10 @@ const team: React.FC = () => (
             <MemberTable names={teamNames[2026]} members={allTeams[2026]}/>
             <PlacingList
                 year={2026}
-                titles={["Season Summary", "Georgia Scrimmage"]}
+                titles={["Season Summary", "Georgia Scrimmage", "Monta Vista Invitational", "University of Virginia Invitational"]}
                 first={
                     <div>
-                        <div className="season-text">5 medals</div>
+                        <div className="season-text">45 medals</div>
                         <div className="season-text">
                             Alternates: Esther Hwang, Yeeun Kwak, Lien Nguyen, Chenfei Zhou, Clark Song, Dylan Lim, Maggie Wang, Nathanael Binyam
                         </div>
