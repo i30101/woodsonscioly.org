@@ -18,8 +18,14 @@ import React from "react";
  * - Values are an array of event names that achieved that placing.
  */
 
+interface Competition {
+    [rank: number]: string[];
+}
 
-const placings2023 = [
+type SeasonPlacings = Competition[];
+
+
+const placings2023: SeasonPlacings = [
     {
         2: ["Forestry"],
         3: ["Astronomy"],
@@ -59,7 +65,7 @@ const placings2023 = [
     }
 ]
 
-const placings2024 = [
+const placings2024: SeasonPlacings = [
     {
         0: ["4th overall"],
         3: ["Anatomy & Physiology", "Science in the News"],
@@ -101,7 +107,7 @@ const placings2024 = [
     }
 ]
 
-const placings2025: any = [
+const placings2025: SeasonPlacings = [
     {
         0: ["2nd overall"],
         2: ["Codebusters", "Entomology"],
@@ -166,7 +172,7 @@ const placings2025: any = [
     },
 ]
 
-const placings2026: any = [
+const placings2026: SeasonPlacings = [
     {
         0: ["8th overall"],
         3: ["Water Quality"],
@@ -189,10 +195,46 @@ const placings2026: any = [
         1: ["Anatomy & Physiology", "Astronomy", "Codebusters", "Disease Detectives", "Experimental Design", "Forensics", "Rocks and Minerals"],
         2: ["Astronomy", "Circuit Lab", "Codebusters", "Disease Detectives", "Materials Science", "Rocks and Minerals"],
         3: ["Chemistry Lab", "Codebusters", "Dynamic Planet", "Engineering CAD", "Entomology", "Experimental Design", "Forensics", "Remote Sensing"]
+    },
+    {
+        0: ["1st overall"],
+        1: ["Anatomy & Physiology", "Designer Genes", "Disease Detectives", "Electric Vehicle", "Helicopter", "Materials Science"],
+        2: ["Entomology", "Helicopter", "Hovercraft", "Machines"],
+        3: ["Anatomy & Physiology", "Boomilever", "Disease Detectives", "Materials Science"],
+        4: ["Chemistry Lab", "Codebusters", "Dynamic Planet", "Rocks and Minerals"],
+        5: ["Hovercraft", "Robot Tour", "Rocks and Minerals"],
+        6: ["Entomology"],
+    },
+    {
+        0: ["27th overall"],    
     }
 ]
 
-const years = [placings2023, placings2024, placings2025, placings2026];
+const years: SeasonPlacings[] = [placings2023, placings2024, placings2025, placings2026];
+
+
+/**
+ * Calculates the total number of medals for a given year
+ * @param year desired season year (2023-2026)
+ * @returns total medal count for the season
+ */
+export const calculateSeasonMedals = (year: number): number => {
+    const yearDict = years[year - 2023];
+    if (!yearDict) return 0;
+    
+    let totalMedals = 0;
+    yearDict.forEach((competition) => {
+        for (const rankRaw in competition) {
+            const rankNum = Number(rankRaw);
+            // Skip overall rank (0) and only count actual placements
+            if (rankNum !== 0 && competition[rankRaw]) {
+                totalMedals += competition[rankRaw].length;
+            }
+        }
+    });
+    
+    return totalMedals;
+};
 
 
 interface RankingProps {
