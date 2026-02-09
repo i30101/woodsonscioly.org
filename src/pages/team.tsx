@@ -14,6 +14,7 @@ import {useState, ReactNode} from "react";
 
 
 // local
+import Rankings, { calculateSeasonMedals } from '../components/Rankings'
 import PlacingList from "../components/PlacingList";
 
 
@@ -158,10 +159,10 @@ const team: React.FC = () => (
             <MemberTable names={teamNames[2026]} members={allTeams[2026]}/>
             <PlacingList
                 year={2026}
-                titles={["Season Summary", "Georgia Scrimmage", "Monta Vista Invitational", "University of Virginia Invitational"]}
+                titles={["Season Summary", "Georgia Scrimmage", "Monta Vista Invitational", "University of Virginia Invitational", 'Fairfax nvitational', "Princeton Invitational"]} //, "UMW Regional", "States"
                 first={
                     <div>
-                        <div className="season-text">45 medals</div>
+                        <div className="season-text">{calculateSeasonMedals(2026)} medals</div>
                         <div className="season-text">
                             Alternates: Esther Hwang, Yeeun Kwak, Lien Nguyen, Chenfei Zhou, Clark Song, Dylan Lim, Maggie Wang, Nathanael Binyam
                         </div>
@@ -178,7 +179,7 @@ const team: React.FC = () => (
                         titles={["Season Summary", "Georgia Scrimmage", "Monta Vista Invitational", "Flint Hill Invitational", "Fairfax Invitational", "Princeton Invitational", "UMW Regional", "States"]}
                         first={
                             <div>
-                                <div className="season-text">133 medals</div>
+                                <div className="season-text">{calculateSeasonMedals(2025)} medals</div>
                                 <div className="season-text">Alternates: Humphrey, Lien Nguyen, Sophia Nguyen, Esther Hwang</div>
                             </div>
                         }
@@ -190,7 +191,7 @@ const team: React.FC = () => (
                         titles={["Season Summary", "Georgia Scrimmage", "Fairfax Invitational", "Princeton Invitational", "Fairfax Regional", "States" ]}
                         first={
                             <div>
-                                <div className="season-text">72 medals</div>
+                                <div className="season-text">{calculateSeasonMedals(2024)} medals</div>
                                 <div className="season-text">3 trophies</div>
                                 <div className="season-text">Alternates: Christopher Hwang, Sonan Sahgal, Samuel Indyk</div>
                             </div>
@@ -203,7 +204,7 @@ const team: React.FC = () => (
                         titles={["Season Summary", "Georgia Scrimmage", "Fairfax Invitational",  "Princeton Invitational", "Thomas Jefferson Regional", "States" ]}
                         first={
                             <div>
-                                <div className="season-text">54 medals</div>
+                                <div className="season-text">{calculateSeasonMedals(2023)} medals</div>
                                 <div className="season-text">3 trophies</div>
                             </div>
                         }
